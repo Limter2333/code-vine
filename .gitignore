@@ -1,0 +1,36 @@
+# ===== Python 字节码 =====
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===== 打包产物（≈ Maven 的 target/）=====
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== 虚拟环境：绝不提交（≈ 不提交 ~/.m2 和 JDK）=====
+.venv/
+venv/
+ENV/
+
+# ===== 工具缓存 =====
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ===== 环境变量与密钥：绝不提交 =====
+.env
+.env.*
+!.env.example
+
+# ===== 编辑器 / 操作系统 =====
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# 注意：.vscode/ 故意不忽略，让协作者共享编辑器配置

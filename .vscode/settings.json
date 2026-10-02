@@ -1,0 +1,25 @@
+{
+  // 保存时自动用 ruff 修复 + 格式化
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+
+  // 类型检查：basic 日常够用，严格项目用 strict
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+
+  // 测试
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["tests"],
+
+  // 终端里默认用 uv run，避免忘记激活环境
+  "python.terminal.activateEnvironment": true,
+  "files.exclude": { "**/__pycache__": true, "**/.pytest_cache": true }
+}
