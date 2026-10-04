@@ -31,7 +31,8 @@ select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]  # pycodestyle/pyflakes/isort/
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-ra --strict-markers"
+markers = ["integration: 打真实网关, 会花钱/耗时/离线会红"]
+addopts = "-m 'not integration'"
 
 [tool.mypy]
 strict = true
