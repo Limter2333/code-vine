@@ -21,5 +21,10 @@
 
   // 终端里默认用 uv run，避免忘记激活环境
   "python.terminal.activateEnvironment": true,
-  "files.exclude": { "**/__pycache__": true, "**/.pytest_cache": true }
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.useInlineViewWhenSpaceIsLimited": true
 }
