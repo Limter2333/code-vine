@@ -50,3 +50,7 @@ class ToolRegistry:
     def api_tools(self) -> list[dict[str, Any]]:
         """给 messages.create(tools=...) 的参数。"""
         return [spec.to_api() for spec in self._specs.values()]
+
+    def api_tools_names(self) -> list[str]:
+        """已注册的工具名。主要用于给模型的错误提示。"""
+        return sorted(self._specs)
